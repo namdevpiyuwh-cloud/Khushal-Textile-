@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushal Textile – Wholesale | Premium Girls Wear Wholesale Supplier</title>
+<meta name="description" content="Khushal Textile – Wholesale supplies premium girls' dresses to retailers, boutiques and resellers across India. Bulk orders, best quality, Pan India delivery.">
+<meta name="keywords" content="girls dress wholesale, girls wear wholesale supplier, kids dress wholesale India, boutique dress supplier, bulk girls dresses">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FFFCF9;
+    --paper:#FFF6EF;
+    --plum:#3B1533;
+    --plum-2:#5C2354;
+    --plum-soft:#7A3B6E;
+    --rose:#D8698F;
+    --rose-deep:#C24C77;
+    --rose-light:#F6DCE6;
+    --gold:#B6902F;
+    --gold-light:#E9D7A3;
+    --ink:#241220;
+    --muted:#7A6674;
+    --line: rgba(59,21,51,0.12);
+    --shadow: 0 20px 50px -20px rgba(59,21,51,0.28);
+    --radius: 2px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    color:var(--plum);
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:.72rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:700;
+    display:inline-flex;
+    align-items:center;
+    gap:.6em;
+  }
+  .eyebrow::before{
+    content:'';
+    width:22px;height:1px;
+    background:var(--gold);
+    display:inline-block;
+  }
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 clamp(20px,5vw,48px);
+  }
+  section{position:relative;}
+
+  /* reveal animation */
+  .reveal{
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+  .reveal-d1{transition-delay:.08s;}
+  .reveal-d2{transition-delay:.16s;}
+  .reveal-d3{transition-delay:.24s;}
+  .reveal-d4{transition-delay:.32s;}
+  .reveal-d5{transition-delay:.4s;}
+  .reveal-d6{transition-delay:.48s;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
+  }
+
+  /* ============ NAV ============ */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:200;
+    background:rgba(255,252,249,0.86);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+    transition:background .3s ease;
+  }
+  .nav{
+    max-width:1180px;margin:0 auto;
+    padding:16px clamp(20px,5vw,48px);
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;
+  }
+  .brand{display:flex;flex-direction:column;line-height:1.05;}
+  .brand .name{font-family:'Fraunces',serif;font-weight:700;font-size:1.28rem;color:var(--plum);}
+  .brand .tag{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:3px;}
+  nav.links{display:flex;align-items:center;gap:34px;}
+  nav.links a{
+    font-size:.86rem;font-weight:600;color:var(--plum);
+    position:relative;padding:4px 0;
+  }
+  nav.links a::after{
+    content:'';position:absolute;left:0;bottom:0;height:1px;width:0;
+    background:var(--gold);transition:width .3s ease;
+  }
+  nav.links a:hover::after{width:100%;}
+  .nav-cta{
+    display:flex;align-items:center;gap:14px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+    padding:13px 26px;
+    font-size:.84rem;font-weight:700;letter-spacing:.02em;
+    border-radius:var(--radius);
+    border:1px solid transparent;
+    white-space:nowrap;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, background .3s ease, color .3s ease, border-color .3s ease;
+  }
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold-light),var(--gold) 60%, #9c7a26);
+    color:#3a2a08;
+    box-shadow:0 10px 24px -10px rgba(182,144,47,0.6);
+  }
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 30px -10px rgba(182,144,47,0.75);}
+  .btn-outline-plum{
+    border-color:var(--plum);color:var(--plum);background:transparent;
+  }
+  .btn-outline-plum:hover{background:var(--plum);color:var(--ivory);transform:translateY(-3px);}
+  .btn-whatsapp{
+    background:#20744a; color:#fff;
+    box-shadow:0 10px 24px -10px rgba(32,116,74,.55);
+  }
+  .btn-whatsapp:hover{transform:translateY(-3px); background:#1c633f;}
+  .btn-sm{padding:10px 18px;font-size:.76rem;}
+  .btn svg{width:16px;height:16px;flex:none;}
+
+  .menu-toggle{
+    display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;
+  }
+  .menu-toggle span{width:24px;height:2px;background:var(--plum);display:block;}
+
+  /* ============ HERO ============ */
+  .hero{
+    padding:calc(96px + 64px) 0 90px;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(216,105,143,.14), transparent 60%),
+      radial-gradient(900px 500px at -10% 20%, rgba(182,144,47,.10), transparent 60%),
+      var(--ivory);
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 4.6vw, 3.6rem);
+    line-height:1.06;
+    margin:18px 0 22px;
+  }
+  .hero h1 em{
+    font-style:italic;color:var(--rose-deep);
+    font-weight:500;
+  }
+  .hero p.sub{
+    font-size:1.06rem;line-height:1.65;color:var(--muted);
+    max-width:520px;margin-bottom:14px;
+  }
+  .hero .pills{display:flex;flex-wrap:wrap;gap:10px 22px;margin:20px 0 32px;}
+  .hero .pills span{
+    font-size:.82rem;font-weight:600;color:var(--plum-2);
+    display:flex;align-items:center;gap:8px;
+  }
+  .hero .pills span::before{
+    content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
+
+  /* hero visual: hanging swatch tags */
+  .hero-visual{position:relative;height:460px;}
+  .tagcard{
+    position:absolute;
+    width:180px;
+    background:var(--ivory);
+    border:1px solid var(--line);
+    border-radius:3px;
+    box-shadow:var(--shadow);
+    padding:10px;
+    animation:float 7s ease-in-out infinite;
+  }
+  .tagcard .swatch{
+    height:150px;border-radius:2px;position:relative;overflow:hidden;
+    border:1px solid rgba(59,21,51,0.08);
+  }
+  .tagcard .hole{
+    position:absolute;top:-9px;left:14px;width:16px;height:16px;border-radius:50%;
+    background:var(--ivory);border:2px solid var(--gold);
+  }
+  .tagcard .hole::after{
+    content:'';position:absolute;inset:4px;border-radius:50%;background:var(--paper);
+  }
+  .tagcard .lbl{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:10px;}
+  .tagcard .nm{font-family:'Fraunces',serif;font-size:.94rem;color:var(--plum);margin-top:3px;}
+
+  .tc1{top:0;left:20px;transform:rotate(-7deg);animation-delay:0s;}
+  .tc2{top:70px;right:0;width:200px;transform:rotate(5deg);animation-delay:1.2s;z-index:2;}
+  .tc3{bottom:0;left:70px;width:170px;transform:rotate(4deg);animation-delay:2.4s;}
+
+  @keyframes float{
+    0%,100%{transform-origin:top center;transform:rotate(var(--r,-6deg)) translateY(0);}
+    50%{transform:rotate(calc(var(--r,-6deg) * -1)) translateY(-10px);}
+  }
+  .tc1{--r:-7deg;}
+  .tc2{--r:5deg;}
+  .tc3{--r:4deg;}
+
+  .swatch-a{background:repeating-linear-gradient(115deg, var(--rose-light), var(--rose-light) 10px, #fff 10px, #fff 20px);}
+  .swatch-b{background:radial-gradient(circle at 30% 30%, var(--gold-light) 0 4px, transparent 5px) , radial-gradient(circle at 70% 65%, var(--gold-light) 0 4px, transparent 5px), var(--rose-light); background-size:26px 26px, 26px 26px, 100% 100%;}
+  .swatch-c{background:linear-gradient(160deg, var(--plum-2), var(--rose-deep));}
+
+  /* ============ SECTION HEADERS ============ */
+  .sec-head{max-width:640px;margin-bottom:52px;}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .sec-head h2{font-size:clamp(1.7rem,3vw,2.35rem);margin-top:14px;line-height:1.14;}
+  .sec-head p{color:var(--muted);margin-top:14px;font-size:1rem;line-height:1.65;}
+
+  section.alt{background:var(--paper);}
+  .pad{padding:100px 0;}
+
+  /* ============ CATEGORIES ============ */
+  .cat-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .cat-card{
+    position:relative;
+    padding:30px 24px 26px;
+    border:1px solid var(--line);
+    background:var(--ivory);
+    border-radius:3px;
+    transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease, border-color .3s ease;
+    overflow:hidden;
+  }
+  .cat-card::before{
+    content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+    background:linear-gradient(var(--gold), var(--rose-deep));
+    transform:scaleY(0);transform-origin:top;transition:transform .5s ease;
+  }
+  .cat-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent;}
+  .cat-card:hover::before{transform:scaleY(1);}
+  .cat-card .icon{
+    width:42px;height:42px;margin-bottom:18px;color:var(--rose-deep);
+  }
+  .cat-card h3{font-size:1.18rem;margin-bottom:8px;}
+  .cat-card p{font-size:.88rem;color:var(--muted);line-height:1.55;}
+  .cat-card .go{
+    margin-top:16px;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);
+    display:inline-flex;align-items:center;gap:6px;
+  }
+
+  /* ============ WHY CHOOSE US ============ */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .why-item{background:var(--ivory);padding:38px 30px;}
+  .why-item .icon{width:34px;height:34px;color:var(--gold);margin-bottom:16px;}
+  .why-item h3{font-size:1.04rem;margin-bottom:8px;}
+  .why-item p{font-size:.85rem;color:var(--muted);line-height:1.5;}
+
+  /* ============ FEATURED PRODUCTS ============ */
+  .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .prod-card{
+    background:var(--ivory);border:1px solid var(--line);border-radius:3px;
+    padding:16px 16px 20px;
+    transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease;
+    position:relative;
+  }
+  .prod-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);}
+  .prod-media{
+    position:relative;height:230px;border-radius:2px;overflow:hidden;margin-bottom:16px;
+    border:1px solid rgba(59,21,51,.08);
+  }
+  .prod-media .hole{
+    position:absolute;top:10px;left:10px;width:14px;height:14px;border-radius:50%;
+    background:rgba(255,252,249,.9);border:2px solid var(--gold);z-index:2;
+  }
+  .prod-media .moq-flag{
+    position:absolute;top:12px;right:0;
+    background:var(--plum);color:var(--gold-light);
+    font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    padding:6px 12px 6px 14px;border-radius:2px 0 0 2px;
+  }
+  .prod-name{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--plum);margin-bottom:4px;}
+  .prod-meta{display:flex;align-items:baseline;justify-content:space-between;margin:10px 0 16px;}
+  .prod-price{font-size:1.2rem;font-weight:700;color:var(--rose-deep);font-family:'Fraunces',serif;}
+  .prod-price small{font-size:.68rem;color:var(--muted);font-family:'Inter',sans-serif;font-weight:600;}
+  .prod-moq{font-size:.76rem;color:var(--muted);font-weight:600;}
+  .prod-card .btn{width:100%;}
+
+  /* fabric swatch variety */
+  .f1{background:repeating-linear-gradient(60deg, var(--rose-light), var(--rose-light) 8px, #ffffff 8px, #ffffff 16px);}
+  .f2{background:radial-gradient(circle at 20% 30%, var(--gold-light) 0 5px, transparent 6px), radial-gradient(circle at 60% 70%, var(--gold-light) 0 5px, transparent 6px), radial-gradient(circle at 85% 20%, var(--gold-light) 0 5px, transparent 6px), var(--ivory); background-size:34px 34px,34px 34px,34px 34px,100% 100%;}
+  .f3{background:linear-gradient(150deg,var(--plum-2), var(--rose-deep) 70%);}
+  .f4{background:repeating-linear-gradient(0deg, var(--paper) 0 10px, var(--rose-light) 10px 20px);}
+  .f5{background:linear-gradient(120deg, var(--gold-light), var(--rose-light) 55%, var(--paper));}
+  .f6{background:conic-gradient(from 45deg at 50% 50%, var(--plum-2), var(--rose-deep), var(--gold), var(--plum-2));}
+
+  /* ============ BULK ORDER BANNER ============ */
+  .bulk{
+    background:linear-gradient(135deg, var(--plum) 0%, var(--plum-2) 55%, var(--rose-deep) 130%);
+    color:var(--ivory);position:relative;overflow:hidden;
+  }
+  .bulk::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(600px 300px at 90% 10%, rgba(233,215,163,.18), transparent 60%);
+  }
+  .bulk .wrap{position:relative;padding:86px clamp(20px,5vw,48px);text-align:center;}
+  .bulk .eyebrow{color:var(--gold-light);}
+  .bulk .eyebrow::before{background:var(--gold-light);}
+  .bulk h2{color:var(--ivory);font-size:clamp(1.8rem,3.4vw,2.6rem);margin:16px 0 18px;max-width:680px;margin-left:auto;margin-right:auto;}
+  .bulk p{color:rgba(255,252,249,.82);max-width:560px;margin:0 auto 34px;font-size:1.02rem;line-height:1.6;}
+
+  /* ============ TESTIMONIALS ============ */
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .rev-card{
+    background:var(--ivory);border:1px solid var(--line);border-radius:3px;
+    padding:32px 28px;position:relative;
+  }
+  .rev-quote{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:2.6rem;line-height:1;display:block;margin-bottom:8px;}
+  .rev-text{font-size:.94rem;color:var(--plum-2);line-height:1.65;margin-bottom:22px;}
+  .rev-person{display:flex;align-items:center;gap:12px;}
+  .rev-avatar{
+    width:40px;height:40px;border-radius:50%;
+    background:linear-gradient(135deg, var(--rose), var(--gold));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;color:#fff;font-weight:700;font-size:.9rem;
+  }
+  .rev-name{font-weight:700;font-size:.86rem;color:var(--plum);}
+  .rev-role{font-size:.76rem;color:var(--muted);}
+  .stars{color:var(--gold);font-size:.8rem;letter-spacing:2px;margin-top:2px;}
+
+  /* ============ CONTACT ============ */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .form-card{
+    background:var(--ivory);border:1px solid var(--line);border-radius:3px;padding:36px;
+  }
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--plum-2);margin-bottom:8px;}
+  .field input, .field textarea, .field select{
+    width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:2px;
+    font-family:'Inter',sans-serif;font-size:.92rem;background:var(--paper);color:var(--ink);
+    transition:border-color .25s ease, background .25s ease;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus{
+    outline:none;border-color:var(--gold);background:var(--ivory);
+  }
+  .field textarea{resize:vertical;min-height:100px;}
+  .form-msg{margin-top:14px;font-size:.86rem;font-weight:600;color:#20744a;display:none;}
+  .form-msg.show{display:block;}
+
+  .info-list{display:flex;flex-direction:column;gap:22px;margin-bottom:30px;}
+  .info-item{display:flex;gap:16px;align-items:flex-start;}
+  .info-item .icon{
+    width:20px;height:20px;flex:none;color:var(--gold);margin-top:3px;
+  }
+  .info-item .label{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:4px;}
+  .info-item .val{font-size:.98rem;color:var(--plum);font-weight:600;}
+  .map-frame{
+    border:1px solid var(--line);border-radius:3px;overflow:hidden;height:260px;filter:saturate(.85);
+  }
+  .map-frame iframe{width:100%;height:100%;border:0;display:block;}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--plum);color:rgba(255,252,249,.75);padding:64px 0 30px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:48px;}
+  .foot-brand .name{font-family:'Fraunces',serif;color:var(--ivory);font-size:1.3rem;font-weight:700;}
+  .foot-brand .tag{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-top:6px;}
+  .foot-brand p{margin-top:16px;font-size:.86rem;line-height:1.6;max-width:280px;}
+  .foot-col h4{color:var(--ivory);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;font-family:'Inter',sans-serif;font-weight:700;}
+  .foot-col ul li{margin-bottom:10px;}
+  .foot-col a{font-size:.88rem;transition:color .25s ease;}
+  .foot-col a:hover{color:var(--gold-light);}
+  .foot-social{display:flex;gap:12px;}
+  .foot-social a{
+    width:38px;height:38px;border:1px solid rgba(255,252,249,.2);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;transition:background .25s ease, border-color .25s ease;
+  }
+  .foot-social a:hover{background:rgba(255,252,249,.1);border-color:var(--gold-light);}
+  .foot-social svg{width:16px;height:16px;}
+  .foot-bottom{
+    border-top:1px solid rgba(255,252,249,.14);padding-top:24px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+    font-size:.78rem;
+  }
+
+  /* ============ WHATSAPP FLOAT ============ */
+  .wa-float{
+    position:fixed;bottom:24px;right:24px;z-index:300;
+    width:58px;height:58px;border-radius:50%;
+    background:#20744a;color:#fff;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 14px 30px -8px rgba(32,116,74,.55);
+    animation:pulse 2.6s ease-in-out infinite;
+  }
+  .wa-float svg{width:28px;height:28px;}
+  @keyframes pulse{
+    0%,100%{box-shadow:0 14px 30px -8px rgba(32,116,74,.55);}
+    50%{box-shadow:0 14px 30px -8px rgba(32,116,74,.85), 0 0 0 10px rgba(32,116,74,.08);}
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width:980px){
+    nav.links{display:none;}
+    .menu-toggle{display:flex;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-visual{height:340px;margin-top:20px;}
+    .cat-grid, .prod-grid, .rev-grid{grid-template-columns:repeat(2,1fr);}
+    .why-grid{grid-template-columns:repeat(2,1fr);}
+    .contact-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    .cat-grid, .prod-grid, .rev-grid, .why-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;gap:36px;}
+    .hero{padding-top:130px;}
+    .nav-cta .btn-sm span.txt{display:none;}
+  }
+
+  /* mobile nav drawer */
+  .mobile-drawer{
+    position:fixed;inset:0;background:var(--ivory);z-index:250;
+    display:flex;flex-direction:column;padding:100px 32px 40px;
+    transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.8,.2,1);
+  }
+  .mobile-drawer.open{transform:translateX(0);}
+  .mobile-drawer a{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--plum);padding:14px 0;border-bottom:1px solid var(--line);}
+  .drawer-close{position:absolute;top:28px;right:28px;background:none;border:none;font-size:1.6rem;color:var(--plum);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="brand">
+      <span class="name">Khushal Textile</span>
+      <span class="tag">Wholesale · Girls Wear</span>
+    </a>
+    <nav class="links">
+      <a href="#collection">Collection</a>
+      <a href="#why">Why Us</a>
+      <a href="#bulk">Bulk Orders</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919876543210?text=Hi%20Khushal%20Textile%2C%20I%27d%20like%20wholesale%20details." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.24-1.37c1.44.79 3.07 1.2 4.8 1.2 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.32a8.17 8.17 0 0 1-1.26-4.32c0-4.53 3.68-8.21 8.22-8.21 4.53 0 8.21 3.68 8.21 8.21 0 4.54-3.68 8.24-8.2 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31s-.87.85-.87 2.08.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+        <span class="txt">WhatsApp</span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" id="menuBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="drawer">
+  <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+  <a href="#collection">Collection</a>
+  <a href="#why">Why Us</a>
+  <a href="#bulk">Bulk Orders</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow reveal in-view">Wholesale Supplier · Est. Surat</span>
+        <h1 class="reveal in-view">Premium Girls Wear<br><em>Wholesale</em> Collection</h1>
+        <p class="sub reveal in-view reveal-d1">Latest designer dresses at wholesale prices — sourced, stitched and dispatched for retailers, boutiques and resellers across India.</p>
+        <div class="pills reveal in-view reveal-d2">
+          <span>Bulk Orders</span>
+          <span>Best Quality</span>
+          <span>Pan India Delivery</span>
+        </div>
+        <div class="hero-actions reveal in-view reveal-d3">
+          <a href="#collection" class="btn btn-gold">View Collection</a>
+          <a href="https://wa.me/919876543210?text=Hi%20Khushal%20Textile%2C%20I%27d%20like%20to%20see%20your%20wholesale%20catalogue." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.24-1.37c1.44.79 3.07 1.2 4.8 1.2 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.32a8.17 8.17 0 0 1-1.26-4.32c0-4.53 3.68-8.21 8.22-8.21 4.53 0 8.21 3.68 8.21 8.21 0 4.54-3.68 8.24-8.2 8.24z"/></svg>
+            Contact on WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal in-view reveal-d2">
+        <div class="tagcard tc1"><div class="hole"></div><div class="swatch swatch-a"></div><div class="lbl">Party Wear</div><div class="nm">Zara Frill Dress</div></div>
+        <div class="tagcard tc2"><div class="hole"></div><div class="swatch swatch-c"></div><div class="lbl">Festival Edit</div><div class="nm">Anaya Lehenga Frock</div></div>
+        <div class="tagcard tc3"><div class="hole"></div><div class="swatch swatch-b"></div><div class="lbl">Cotton Casual</div><div class="nm">Meera Everyday Set</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="pad" id="collection">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">The Collection</span>
+        <h2>Six lines, one wardrobe of occasions</h2>
+        <p>Every category is stocked and dispatch-ready in bulk — mix and match across lines for your store's full seasonal order.</p>
+      </div>
+      <div class="cat-grid">
+
+        <div class="cat-card reveal reveal-d1">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M18 8l6-3 6 3-2 6h-8l-2-6z"/><path d="M14 14l10-3 10 3 4 22H10l4-22z"/><path d="M18 20c2 3 10 3 12 0"/></svg>
+          <h3>Party Wear Dresses</h3>
+          <p>Sequins, tulle and net silhouettes for birthdays, weddings and celebrations.</p>
+          <span class="go">Enquire &rarr;</span>
+        </div>
+
+        <div class="cat-card reveal reveal-d2">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 9l8-3 8 3-2 6H18l-2-6z"/><rect x="12" y="15" width="24" height="24" rx="2"/></svg>
+          <h3>Casual Dresses</h3>
+          <p>Everyday cotton-blend fits built for comfort, play and easy care.</p>
+          <span class="go">Enquire &rarr;</span>
+        </div>
+
+        <div class="cat-card reveal reveal-d3">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 6c-6 4-10 4-10 10s4 8 10 8 10-2 10-8-4-6-10-10z"/><path d="M18 24l-4 18h20l-4-18"/></svg>
+          <h3>Cotton Dresses</h3>
+          <p>Breathable pure-cotton pieces, a staple reorder line for boutiques.</p>
+          <span class="go">Enquire &rarr;</span>
+        </div>
+
+        <div class="cat-card reveal reveal-d4">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 6l3 6 6 1-4.5 4.5L30 24l-6-3-6 3 1.5-6.5L15 13l6-1 3-6z"/><path d="M16 26l-4 14h24l-4-14"/></svg>
+          <h3>Fancy Dresses</h3>
+          <p>Embellished statement pieces for boutiques chasing standout window stock.</p>
+          <span class="go">Enquire &rarr;</span>
+        </div>
+
+        <div class="cat-card reveal reveal-d5">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="24" cy="15" r="6"/><path d="M14 40l4-16h12l4 16"/><path d="M18 24c2 3 10 3 12 0"/></svg>
+          <h3>Festival Collection</h3>
+          <p>Ethnic-inspired frocks and lehenga sets timed for the festive season.</p>
+          <span class="go">Enquire &rarr;</span>
+        </div>
+
+        <div class="cat-card reveal reveal-d6">
+          <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 8v14M24 8l-6 6M24 8l6 6"/><rect x="12" y="24" width="24" height="16" rx="2"/></svg>
+          <h3>New Arrivals</h3>
+          <p>Fresh cuts landing weekly — first look and first pick for registered retailers.</p>
+          <span class="go">Enquire &rarr;</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="alt" id="why">
+    <div class="wrap pad">
+      <div class="sec-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow" style="justify-content:center;">Why Retailers Reorder</span>
+        <h2>Built for the way boutiques actually buy</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal reveal-d1">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <h3>Wholesale Prices</h3>
+          <p>Factory-direct rates with slab pricing that improves as your order grows.</p>
+        </div>
+        <div class="why-item reveal reveal-d2">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 6.5 1-4.7 4.6L18 20l-6-3.2L6 20l1.2-6.4L2.5 9l6.5-1z"/></svg>
+          <h3>Premium Quality</h3>
+          <p>Fabric and stitching checked at every stage before it leaves our facility.</p>
+        </div>
+        <div class="why-item reveal reveal-d3">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="14" height="11" rx="1"/><path d="M17 10h3l1.5 3.5V18H17"/><circle cx="7.5" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>
+          <h3>Bulk Orders Available</h3>
+          <p>From starter boutique lots to full-container retail chain orders.</p>
+        </div>
+        <div class="why-item reveal reveal-d4">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h3>Fast Dispatch</h3>
+          <p>Standard orders leave our warehouse within 24–48 hours of confirmation.</p>
+        </div>
+        <div class="why-item reveal reveal-d5">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+          <h3>Pan India Delivery</h3>
+          <p>Reliable courier and transport tie-ups reaching every state and city.</p>
+        </div>
+        <div class="why-item reveal reveal-d6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+          <h3>Trusted Textile Supplier</h3>
+          <p>Years of B2B relationships with boutiques and resellers across India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED PRODUCTS ================= -->
+  <section class="pad">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Featured Stock</span>
+        <h2>This week's best-selling wholesale lines</h2>
+        <p>Prices are per piece at listed MOQ. Full size-run and colourway sheets shared on WhatsApp enquiry.</p>
+      </div>
+      <div class="prod-grid">
+
+        <div class="prod-card reveal reveal-d1">
+          <div class="prod-media f1"><div class="hole"></div><div class="moq-flag">MOQ 24 pcs</div></div>
+          <div class="prod-name">Zara Frill Party Dress</div>
+          <div class="prod-meta">
+            <span class="prod-price">₹385 <small>/ pc</small></span>
+            <span class="prod-moq">24 pcs</span>
+          </div>
+          <a class="btn btn-outline-plum btn-sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20wholesale%20details%20for%20Zara%20Frill%20Party%20Dress." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+
+        <div class="prod-card reveal reveal-d2">
+          <div class="prod-media f2"><div class="hole"></div><div class="moq-flag">MOQ 12 pcs</div></div>
+          <div class="prod-name">Meera Cotton Casual Set</div>
+          <div class="prod-meta">
+            <span class="prod-price">₹215 <small>/ pc</small></span>
+            <span class="prod-moq">12 pcs</span>
+          </div>
+          <a class="btn btn-outline-plum btn-sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20wholesale%20details%20for%20Meera%20Cotton%20Casual%20Set." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+
+        <div class="prod-card reveal reveal-d3">
+          <div class="prod-media f3"><div class="hole"></div><div class="moq-flag">MOQ 18 pcs</div></div>
+          <div class="prod-name">Anaya Festive Lehenga Frock</div>
+          <div class="prod-meta">
+            <span class="prod-price">₹460 <small>/ pc</small></span>
+            <span class="prod-moq">18 pcs</span>
+          </div>
+          <a class="btn btn-outline-plum btn-sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20wholesale%20details%20for%20Anaya%20Festive%20Lehenga%20Frock." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+
+        <div class="prod-card reveal reveal-d4">
+          <div class="prod-media f4"><div class="hole"></div><div class="moq-flag">MOQ 24 pcs</div></div>
+          <div class="prod-name">Ivy Denim Casual Dress</div>
+          <div class="prod-meta">
+            <span class="prod-price">₹260 <small>/ pc</small></span>
+            <span class="prod-moq">24 pcs</span>
+          </div>
+          <a class="btn btn-outline-plum btn-sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20wholesale%20details%20for%20Ivy%20Denim%20Casual%20Dress." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+
+        <div class="prod-card reveal reveal-d5">
+          <div class="prod-media f5"><div class="hole"></div><div class="moq-flag">MOQ 12 pcs</div></div>
+          <div class="prod-name">Riya Net Party Gown</div>
+          <div class="prod-meta">
+            <span class="prod-price">₹420 <small>/ pc</small></span>
+            <span class="prod-moq">12 pcs</span>
+          </div>
+          <a class="btn btn-outline-plum btn-sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20wholesale%20details%20for%20Riya%20Net%20Party%20Gown." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+
+        <div class="prod-card reveal reveal-d6">
+          <div class="prod-media f6"><div class="hole"></div><div class="moq-flag">MOQ 18 pcs</div></div>
+          <div class="prod-name">Tara Ethnic Fancy Frock</div>
+          <div class="prod-meta">
+            <span class="prod-price">₹340 <small>/ pc</small></span>
+            <span class="prod-moq">18 pcs</span>
+          </div>
+          <a class="btn btn-outline-plum btn-sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20wholesale%20details%20for%20Tara%20Ethnic%20Fancy%20Frock." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BULK ORDER BANNER ================= -->
+  <section class="bulk" id="bulk">
+    <div class="wrap reveal">
+      <span class="eyebrow">B2B · Retailers &amp; Boutiques</span>
+      <h2>Looking for Bulk Orders?</h2>
+      <p>We supply premium girls' dresses to retailers, boutiques and resellers across India — with slab pricing, dedicated support, and dispatch you can plan a season around.</p>
+      <a class="btn btn-gold" href="#contact">Get Wholesale Price List</a>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="pad" id="reviews">
+    <div class="wrap">
+      <div class="sec-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow" style="justify-content:center;">From Our Retail Partners</span>
+        <h2>Trusted by boutiques across India</h2>
+      </div>
+      <div class="rev-grid">
+
+        <div class="rev-card reveal reveal-d1">
+          <span class="rev-quote">&ldquo;</span>
+          <p class="rev-text">Consistent quality and quick reorders — our shelf never runs empty during festival season anymore.</p>
+          <div class="rev-person">
+            <div class="rev-avatar">P</div>
+            <div>
+              <div class="rev-name">Priya Malhotra</div>
+              <div class="rev-role">Boutique Owner, Delhi</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card reveal reveal-d2">
+          <span class="rev-quote">&ldquo;</span>
+          <p class="rev-text">The MOQs are manageable for a small store like mine, and dispatch is genuinely fast every single time.</p>
+          <div class="rev-person">
+            <div class="rev-avatar">R</div>
+            <div>
+              <div class="rev-name">Rohit Sanghavi</div>
+              <div class="rev-role">Reseller, Mumbai</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card reveal reveal-d3">
+          <span class="rev-quote">&ldquo;</span>
+          <p class="rev-text">Fabric quality is well above the price point — customers keep asking where we source our girls' festive wear.</p>
+          <div class="rev-person">
+            <div class="rev-avatar">S</div>
+            <div>
+              <div class="rev-name">Sunita Agarwal</div>
+              <div class="rev-role">Retail Chain, Jaipur</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="alt" id="contact">
+    <div class="wrap pad">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Request your wholesale price list</h2>
+        <p>Share a few details and our team will send the full catalogue, price sheet and MOQ chart on WhatsApp or email.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="form-card reveal reveal-d1">
+          <form id="inquiryForm">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="business">Business / Boutique Name</label>
+              <input type="text" id="business" placeholder="Your store name">
+            </div>
+            <div class="field">
+              <label for="phone">Phone / WhatsApp Number</label>
+              <input type="tel" id="phone" required placeholder="+91 XXXXX XXXXX">
+            </div>
+            <div class="field">
+              <label for="qty">Interested Category</label>
+              <select id="qty">
+                <option>Party Wear Dresses</option>
+                <option>Casual Dresses</option>
+                <option>Cotton Dresses</option>
+                <option>Fancy Dresses</option>
+                <option>Festival Collection</option>
+                <option>New Arrivals</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="msg">Message</label>
+              <textarea id="msg" placeholder="Tell us your order size, city and any specific requirement"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;">Send Enquiry</button>
+            <p class="form-msg" id="formMsg">Thank you — your enquiry has been noted. Our team will reach out on WhatsApp shortly.</p>
+          </form>
+        </div>
+
+        <div class="reveal reveal-d2">
+          <div class="info-list">
+            <div class="info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.24-1.37c1.44.79 3.07 1.2 4.8 1.2 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2z"/></svg>
+              <div>
+                <div class="label">WhatsApp Enquiry</div>
+                <a class="val" href="https://wa.me/919876543210" target="_blank" rel="noopener">+91 98765 43210</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+              <div>
+                <div class="label">Phone Number</div>
+                <a class="val" href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+              <div>
+                <div class="label">Email</div>
+                <a class="val" href="mailto:info@khushaltextile.in">info@khushaltextile.in</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <div>
+                <div class="label">Business Address</div>
+                <span class="val" style="font-weight:600;">C-204, Textile Market, Ring Road, Surat, Gujarat 395002</span>
+              </div>
+            </div>
+          </div>
+          <div class="map-frame">
+            <iframe src="https://maps.google.com/maps?q=Ring%20Road%20Textile%20Market%20Surat%20Gujarat&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Khushal Textile location map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">Khushal Textile</div>
+        <div class="tag">Wholesale · Girls Wear</div>
+        <p>Premium girls' dresses supplied wholesale to retailers, boutiques and resellers across India. Bulk orders, best quality, Pan India delivery.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="#collection">Party Wear</a></li>
+          <li><a href="#collection">Festival Collection</a></li>
+          <li><a href="#collection">New Arrivals</a></li>
+          <li><a href="#bulk">Bulk Price List</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Follow</h4>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.24-1.37c1.44.79 3.07 1.2 4.8 1.2 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Khushal Textile – Wholesale. All rights reserved.</span>
+      <span>Premium Girls Wear Wholesale Supplier</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919876543210?text=Hi%20Khushal%20Textile%2C%20I%27d%20like%20wholesale%20details." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.24-1.37c1.44.79 3.07 1.2 4.8 1.2 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.32a8.17 8.17 0 0 1-1.26-4.32c0-4.53 3.68-8.21 8.22-8.21 4.53 0 8.21 3.68 8.21 8.21 0 4.54-3.68 8.24-8.2 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31s-.87.85-.87 2.08.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal:not(.in-view)');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+    revealEls.forEach(el=>io.observe(el));
+  } else {
+    revealEls.forEach(el=>el.classList.add('in-view'));
+  }
+
+  // Mobile drawer
+  const menuBtn = document.getElementById('menuBtn');
+  const drawer = document.getElementById('drawer');
+  const drawerClose = document.getElementById('drawerClose');
+  menuBtn && menuBtn.addEventListener('click', ()=>drawer.classList.add('open'));
+  drawerClose && drawerClose.addEventListener('click', ()=>drawer.classList.remove('open'));
+  drawer && drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>drawer.classList.remove('open')));
+
+  // Inquiry form (no backend — presentational confirmation + WhatsApp handoff)
+  const form = document.getElementById('inquiryForm');
+  const formMsg = document.getElementById('formMsg');
+  form && form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const category = document.getElementById('qty').value;
+    const msg = document.getElementById('msg').value.trim();
+    formMsg.classList.add('show');
+    const text = encodeURIComponent(`Hi Khushal Textile, I'm ${name}. Interested in: ${category}. ${msg}`);
+    setTimeout(()=>{ window.open(`https://wa.me/919876543210?text=${text}`, '_blank'); }, 900);
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
